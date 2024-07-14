@@ -1,0 +1,144 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #1E2025;
+}
+#hello-world{
+    color:#06D001 ;
+    font-size: 20px;
+    font-family: "Dosis", sans-serif;
+}
+.fonts{
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+}
+.image{
+    margin-top: 3%;
+    margin-left: 2%;
+    background: url(./images/me2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+    animation: animate 7s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+@keyframes animate{
+
+    0%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70% / 60% 60% 30% 60%;
+    }
+}
+.container-flex{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.introduction{
+    max-width: 400px; 
+}
+.paragraph{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cards{  
+    border-radius: 20px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 5%;
+   
+}
+.skills{
+    max-width: 300px;
+    color: white;
+    border-radius: 20px ;
+    background-color: #29343D;
+    
+}
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.row-h2{
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(#ff00d4, #00ddff);
+    background-clip: text;
+    color: transparent;
+
+}
+.content{
+    margin-left: 5%;
+}
+
+.middle-cards{
+    margin-bottom: 100px;
+}
+footer{
+    color: aliceblue;
+    text-align: center;
+ 
+}
+.fa-instagram{
+    font-size: 30px;
+    color: #dd2a7b;
+   
+}
+.fa-whatsapp{
+    font-size: 30px;
+    color: #25D366;
+    margin-left: 20px;
+}
+.fa-linkedin{
+    font-size: 30px;
+    color:#0077B5;
+    margin-left: 20px;
+}
+.border-h2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+.border-h2::before, .border-h2::after{
+    content:" ";
+    height: 2px;
+    background-color: aliceblue;
+    display: block;  
+}
+@media (max-width:770px){
+    .container-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{   
+      display: none;
+    }
+    #hello-world{
+        font-size: 15px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .fonts{
+        text-align: center;
+    }
+    .icons{
+        margin-left:20%;
+    }
+    .paragraph{
+        padding: 2rem;
+    }
+    
+}
